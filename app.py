@@ -9,6 +9,10 @@ import dash
 from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 from flask import session, g
+from datetime import datetime, timedelta
+import dash
+from dash import Input, Output, State
+from flask import session
 
 # Agregar directorio principal al path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -26,6 +30,7 @@ from ui.maintenance_panel import create_maintenance_layout, register_maintenance
 from ui.reporting_panel import create_reporting_layout, register_reporting_callbacks
 from datetime import datetime
 from dash import callback_context
+from datetime import datetime, timedelta
 
 # Inicializar componentes
 db_manager = DatabaseManager()
@@ -220,6 +225,8 @@ def create_main_layout(active_page='monitoring'):
         ]
     )
 # Callback para actualizar el contenido según la URL
+
+# Callback para mantener la sesión
 @app.callback(
     Output('page-content', 'children', allow_duplicate=True),
     [Input('url', 'pathname')],
@@ -246,8 +253,6 @@ def display_page(pathname, session_data):
         try:
             expiry = datetime.fromisoformat(session_data.get('expiry', ''))
             current_time = datetime.now()
-            print(f"Hora actual: {current_time}")
-            print(f"Hora de expiración: {expiry}")
             
             if current_time > expiry:
                 print("Sesión expirada, mostrando login")
@@ -255,30 +260,78 @@ def display_page(pathname, session_data):
         except Exception as e:
             print(f"Error al verificar expiración: {e}")
             return create_auth_layout()
-        
-        # Si la página es logout, limpiar sesión
-        if pathname == '/logout':
-            # Si hay un token guardado, cerrarlo
-            if session_data and 'token' in session_data:
-                auth_manager.logout(session_data['token'])
-            
-            # Redirigir a login
-            print("Logout, mostrando login")
-            return create_auth_layout()
     
-    # Si llegamos aquí, hay una sesión válida - mostrar la página correspondiente
+    # Si llegamos aquí, hay una sesión válida
     print(f"Sesión válida, mostrando {pathname}")
     
-    # Routing básico - explícitamente manejar dashboard
-    if pathname == '/dashboard' or pathname == '/':
+    # Routing de páginas
+    if pathname in ['/', '/dashboard']:
         return create_main_layout('monitoring')
     elif pathname == '/maintenance':
         return create_main_layout('maintenance')
     elif pathname == '/reports':
         return create_main_layout('reports')
     else:
-        # Cualquier otra ruta, mostrar monitoreo por defecto
         return create_main_layout('monitoring')
+
+# Callback para mantener la sesión
+@app.callback(
+    Output('session-store', 'data', allow_duplicate=True),
+    [Input('url', 'pathname')],
+    [State('session-store', 'data')],
+    prevent_initial_call=True
+)
+def maintain_session(pathname, session_data):
+    """Mantiene la sesión activa si es válida."""
+    print(f"Manteniendo sesión para ruta {pathname}")
+    print(f"Datos de sesión actuales: {session_data}")
+    
+    if session_data and isinstance(session_data, dict):
+        try:
+            expiry = datetime.fromisoformat(session_data.get('expiry', ''))
+            current_time = datetime.now()
+            
+            # Si la sesión sigue siendo válida
+            if current_time <= expiry:
+                # Para debugging, mostrar información de sesión
+                print("Sesión válida, manteniendo datos")
+                return session_data
+        except Exception as e:
+            print(f"Error al mantener sesión: {e}")
+    
+    print("No se puede mantener la sesión")
+    return dash.no_update
+
+
+def handle_login_redirect(session_data, current_pathname):
+    """Maneja la redirección después del login."""
+    print(f"Redireccionando - Datos de sesión: {session_data}")
+    print(f"Ruta actual: {current_pathname}")
+    
+    if (session_data and 
+        isinstance(session_data, dict) and 
+        'user' in session_data and 
+        'token' in session_data):
+        try:
+            expiry = datetime.fromisoformat(session_data.get('expiry', ''))
+            
+            if datetime.now() <= expiry:
+                # Si estamos en login o ruta raíz, redirigir a dashboard
+                if current_pathname in ['/', '/login']:
+                    print("Redirigiendo a dashboard")
+                    return "/dashboard"
+        except Exception as e:
+            print(f"Error en redirección: {e}")
+    
+    return dash.no_update
+
+# Callback para redirigir después del login
+@app.callback(
+    Output('url-redirect', 'pathname', allow_duplicate=True),
+    [Input('session-store', 'data')],
+    [State('url', 'pathname')],
+    prevent_initial_call=True
+)
 
 # Callback para actualizar el nombre de usuario
 @app.callback(
@@ -296,45 +349,44 @@ def update_user_name(session_data):
 # Callback para redirigir basado en la sesión
 @app.callback(
     Output('url-redirect', 'pathname', allow_duplicate=True),
-    [Input('session-store', 'data'),
-     Input('url', 'pathname')],
+    [Input('session-store', 'data')],
+    [State('url', 'pathname')],
     prevent_initial_call=True
 )
-def handle_redirect(session_data, pathname):
-    """Gestiona las redirecciones basadas en la sesión y URL."""
-    ctx = dash.callback_context
-    trigger_id = ctx.triggered[0]['prop_id'].split('.')[0]
+def handle_redirect(session_data, current_pathname):
+    """Gestiona las redirecciones basadas en la sesión."""
+    print(f"Redirect Callback - Session Data: {session_data}")
+    print(f"Current Pathname: {current_pathname}")
     
-    print(f"Trigger de redirección: {trigger_id}")
-    print(f"Datos de sesión: {session_data}")
-    print(f"Ruta actual: {pathname}")
-    
-    # Condiciones más estrictas para redirección
+    # Verificar si hay una sesión válida
     if (session_data and 
         isinstance(session_data, dict) and 
         'user' in session_data and 
         'token' in session_data):
+        
         # Verificar expiración
         try:
             expiry = datetime.fromisoformat(session_data.get('expiry', ''))
+            
+            # Si la sesión no ha expirado y estamos en login o ruta raíz, redirigir a dashboard
             if datetime.now() <= expiry:
-                return "/dashboard"
+                if current_pathname in ['/', '/login']:
+                    print("Redirigiendo a dashboard")
+                    return "/dashboard"
+            else:
+                print("Sesión expirada")
         except Exception as e:
             print(f"Error al verificar expiración: {e}")
     
+    # Por defecto, no redirigir
     return dash.no_update
 
-@app.callback(
-    Output('page-content', 'children'),
-    [Input('url', 'pathname')],
-    [State('session-store', 'data')]
-)
-
+# Callback para cargar el contenido específico de cada página
 # Callback para cargar el contenido específico de cada página
 @app.callback(
     Output('page-specific-content', 'children', allow_duplicate=True),
     [Input('url', 'pathname')],
-    prevent_initial_call=True  # Añadir esta línea
+    prevent_initial_call=True
 )
 def load_page_content(pathname):
     """Carga el contenido específico de la página."""
@@ -345,8 +397,6 @@ def load_page_content(pathname):
     else:
         # Página por defecto (monitoreo)
         return create_monitoring_layout()
-    
-# Callback para redirigir basado en la sesión
 
 
 

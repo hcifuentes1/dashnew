@@ -3196,3 +3196,723 @@
 2025-03-14 01:20:11,690 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_a
 2025-03-14 01:20:12,892 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
 2025-03-14 01:20:13,801 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.65s
+2025-03-14 01:25:05,567 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:05,679 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:05,681 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:05,683 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:05,683 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:25:05,683 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:25:05,685 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:05,685 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:25:05,685 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:25:06,214 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,216 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,217 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:25:06,220 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,222 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,224 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,228 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,232 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,232 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:25:06,233 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:25:06,235 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,235 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:25:06,236 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:25:06,238 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,240 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:25:06,241 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:06,242 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:25:06,243 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:25:06,244 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:25:06,244 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:25:06,254 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:25:09,816 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:09,942 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:09,945 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:09,948 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:09,949 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:25:09,949 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:25:09,951 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:09,952 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:25:09,952 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:25:10,685 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,687 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,688 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:25:10,690 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,692 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,694 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,699 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,706 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,708 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:25:10,710 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:25:10,719 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,721 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:25:10,722 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:25:10,726 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,729 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:25:10,733 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:25:10,735 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:25:10,736 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:25:10,738 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:25:10,739 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:25:14,264 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:25:15,193 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:25:20,908 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.63s
+2025-03-14 01:25:21,931 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.69s
+2025-03-14 01:25:24,135 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:25:30,790 - simulator - INFO - SP_13_23 completó transición a Normal en 6.64s
+2025-03-14 01:25:39,665 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:25:41,954 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:25:46,627 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.95s
+2025-03-14 01:25:49,763 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:25:55,409 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:25:56,339 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.56s
+2025-03-14 01:26:00,788 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:26:02,247 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.72s
+2025-03-14 01:26:07,688 - simulator - INFO - SP_13_23 completó transición a Normal en 6.85s
+2025-03-14 01:26:16,720 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:26:25,789 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:26:32,489 - simulator - INFO - SP_13_23 completó transición a Normal en 6.61s
+2025-03-14 01:26:34,602 - simulator - INFO - SP_13_23: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:26:59,428 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:26:59,573 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:26:59,576 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:26:59,581 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:26:59,581 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:26:59,581 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:26:59,586 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:26:59,586 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:26:59,586 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:27:00,132 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,135 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,136 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:27:00,140 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,145 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,152 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,158 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,162 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,162 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:27:00,163 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:27:00,169 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,170 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:27:00,170 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:27:00,174 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,175 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:27:00,179 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:00,181 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:27:00,183 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:27:00,185 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:27:00,185 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:27:00,195 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:27:03,919 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,052 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,054 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,056 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,056 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:27:04,056 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:27:04,058 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,058 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:27:04,059 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:27:04,593 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,596 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,597 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:27:04,599 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,601 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,603 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,606 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,608 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,609 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:27:04,609 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:27:04,611 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,611 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:27:04,612 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:27:04,614 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,615 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:27:04,617 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:04,618 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:27:04,619 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:27:04,620 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:27:04,621 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:27:08,174 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:27:14,795 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.57s
+2025-03-14 01:27:18,113 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:27:24,885 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.76s
+2025-03-14 01:27:24,936 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:27:31,769 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.78s
+2025-03-14 01:27:42,046 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:27:58,134 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,266 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,268 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,269 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,269 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:27:58,270 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:27:58,272 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,272 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:27:58,272 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:27:58,769 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,770 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,771 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:27:58,774 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,776 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,778 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,782 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,786 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,786 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:27:58,786 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:27:58,788 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,789 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:27:58,789 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:27:58,793 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,794 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:27:58,796 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:27:58,798 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:27:58,799 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:27:58,800 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:27:58,800 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:27:58,811 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:27:59,876 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:28:03,483 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:03,621 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:03,623 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:03,625 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:03,626 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:28:03,627 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:28:03,628 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:03,629 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:28:03,629 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:28:04,136 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,138 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,139 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:28:04,142 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,144 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,146 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,150 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,152 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,153 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:28:04,153 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:28:04,156 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,156 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:28:04,157 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:28:04,159 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,160 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:28:04,162 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:28:04,163 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:28:04,164 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:28:04,165 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:28:04,165 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:28:06,565 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.60s
+2025-03-14 01:28:06,590 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:28:13,735 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:28:15,881 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:28:20,320 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.57s
+2025-03-14 01:28:22,447 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.48s
+2025-03-14 01:28:31,380 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:28:37,859 - simulator - INFO - SP_13_23 completó transición a Normal en 6.45s
+2025-03-14 01:28:42,204 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:28:49,255 - simulator - INFO - SP_13_23 completó transición a Reversa en 7.01s
+2025-03-14 01:28:52,427 - simulator - INFO - SP_13_23: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:28:52,427 - simulator - ERROR - Error en simulación de SP_13_23: float division by zero
+2025-03-14 01:29:07,092 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:29:12,635 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_b
+2025-03-14 01:29:13,797 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.63s
+2025-03-14 01:29:37,337 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:29:38,472 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_3
+2025-03-14 01:29:43,954 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.60s
+2025-03-14 01:29:46,243 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:29:49,651 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:29:53,142 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.83s
+2025-03-14 01:29:54,067 - simulator - INFO - VIM_11_21: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:29:56,437 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.69s
+2025-03-14 01:29:59,790 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:30:06,499 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.70s
+2025-03-14 01:30:12,005 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:31:48,683 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:48,802 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:48,806 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:48,809 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:48,810 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:31:48,810 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:31:48,814 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:48,814 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:31:48,814 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:31:49,316 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,320 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,321 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:31:49,327 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,331 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,336 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,342 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,348 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,349 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:31:49,349 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:31:49,354 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,354 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:31:49,354 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:31:49,358 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,359 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:31:49,364 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:49,365 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:31:49,366 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:31:49,367 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:31:49,368 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:31:49,378 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:31:53,469 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:53,622 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:53,626 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:53,630 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:53,630 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:31:53,631 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:31:53,634 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:53,635 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:31:53,635 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:31:54,160 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,162 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,163 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:31:54,170 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,172 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,176 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,187 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,192 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,193 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:31:54,193 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:31:54,198 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,199 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:31:54,199 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:31:54,203 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,205 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:31:54,208 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:31:54,209 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:31:54,212 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:31:54,214 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:31:54,214 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:31:54,978 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:32:01,608 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.62s
+2025-03-14 01:32:23,297 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:32:27,431 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:32:29,860 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.50s
+2025-03-14 01:32:31,007 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:32:34,529 - simulator - INFO - VIM_11_21 completó transición a Normal en 7.09s
+2025-03-14 01:32:38,075 - simulator - INFO - SP_13_23 completó transición a Reversa en 7.05s
+2025-03-14 01:32:38,897 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:32:41,295 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:32:45,730 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.75s
+2025-03-14 01:32:45,731 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_b
+2025-03-14 01:32:47,998 - simulator - INFO - SP_13_23 completó transición a Normal en 6.69s
+2025-03-14 01:32:52,821 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:32:55,985 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:32:59,660 - simulator - INFO - SP_13_23 completó transición a Normal en 6.76s
+2025-03-14 01:33:03,061 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.87s
+2025-03-14 01:33:06,310 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:33:09,468 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:33:13,022 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.66s
+2025-03-14 01:33:16,203 - simulator - INFO - SP_13_23: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:33:16,204 - simulator - ERROR - Error en simulación de SP_13_23: float division by zero
+2025-03-14 01:33:16,522 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.95s
+2025-03-14 01:33:20,830 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:33:27,476 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.57s
+2025-03-14 01:33:36,240 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_a
+2025-03-14 01:33:36,427 - simulator - INFO - SP_13_23: Fallo simulado - Pico de corriente en phase_a
+2025-03-14 01:33:49,904 - simulator - INFO - SP_13_23: Fallo simulado - Pico de corriente en phase_a
+2025-03-14 01:33:55,394 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:55,533 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:55,535 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:55,537 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:55,537 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:33:55,538 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:33:55,540 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:55,540 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:33:55,540 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:33:56,066 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,068 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,069 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:33:56,073 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,077 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,083 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,140 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,287 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,297 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:33:56,320 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:33:56,341 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,367 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:33:56,381 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:33:56,389 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,396 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:33:56,401 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:33:56,404 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:33:56,405 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:33:56,407 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:33:56,407 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:34:11,173 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:34:17,990 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.80s
+2025-03-14 01:34:19,158 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:34:28,065 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:34:33,776 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:34:34,812 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.74s
+2025-03-14 01:34:45,719 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:45,846 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:45,849 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:45,851 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:45,852 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:34:45,852 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:34:45,854 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:45,854 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:34:45,855 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:34:46,346 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,348 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,349 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:34:46,352 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,354 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,356 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,360 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,362 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,362 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:34:46,363 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:34:46,365 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,365 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:34:46,365 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:34:46,367 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,368 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:34:46,371 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:46,372 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:34:46,373 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:34:46,374 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:34:46,374 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:34:46,383 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:34:50,345 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:50,466 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:50,468 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:50,470 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:50,471 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:34:50,472 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:34:50,475 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:50,476 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:34:50,476 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:34:51,045 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,047 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,048 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:34:51,051 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,053 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,055 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,058 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,060 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,060 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:34:51,062 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:34:51,063 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,063 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:34:51,064 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:34:51,066 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,066 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:34:51,069 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:34:51,070 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:34:51,071 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:34:51,072 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:34:51,072 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:34:52,976 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:34:59,812 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.73s
+2025-03-14 01:35:07,308 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:35:07,436 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:35:14,157 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.83s
+2025-03-14 01:35:14,260 - simulator - INFO - SP_13_23 completó transición a Normal en 6.81s
+2025-03-14 01:35:14,326 - simulator - INFO - VIM_11_21: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:35:14,326 - simulator - ERROR - Error en simulación de VIM_11_21: float division by zero
+2025-03-14 01:35:17,539 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:35:19,671 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_2
+2025-03-14 01:35:24,185 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.62s
+2025-03-14 01:35:28,775 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:35:35,597 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.72s
+2025-03-14 01:35:42,046 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:35:49,405 - simulator - INFO - VIM_11_21 completó transición a Normal en 7.28s
+2025-03-14 01:35:50,483 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:35:51,557 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_4
+2025-03-14 01:35:56,913 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.42s
+2025-03-14 01:36:02,149 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:36:09,022 - simulator - INFO - SP_13_23 completó transición a Normal en 6.86s
+2025-03-14 01:36:11,231 - simulator - INFO - VIM_11_21: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:36:11,231 - simulator - ERROR - Error en simulación de VIM_11_21: float division by zero
+2025-03-14 01:36:22,541 - simulator - INFO - SP_13_23: Fallo simulado - Caída de tensión en ctrl_3
+2025-03-14 01:36:26,755 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:26,962 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:26,964 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:26,966 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:26,967 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:36:26,967 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:36:26,969 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:26,969 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:36:26,969 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:36:27,543 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,545 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,546 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:36:27,549 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,552 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,554 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,558 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,560 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,561 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:36:27,561 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:36:27,563 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,564 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:36:27,565 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:36:27,568 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,569 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:36:27,570 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:36:27,571 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:36:27,572 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:36:27,573 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:36:27,574 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:36:29,872 - simulator - INFO - SP_13_23: Fallo simulado - Pico de corriente en phase_a
+2025-03-14 01:36:29,947 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_4
+2025-03-14 01:36:33,722 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:36:37,691 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:36:40,603 - simulator - INFO - SP_13_23 completó transición a Normal en 6.81s
+2025-03-14 01:36:44,665 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.86s
+2025-03-14 01:36:45,628 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:36:52,718 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.90s
+2025-03-14 01:36:56,998 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:37:03,682 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:37:04,745 - simulator - INFO - SP_13_23 completó transición a Reversa en 7.67s
+2025-03-14 01:37:05,873 - simulator - INFO - SP_13_23: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:37:05,874 - simulator - ERROR - Error en simulación de SP_13_23: float division by zero
+2025-03-14 01:37:10,395 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.70s
+2025-03-14 01:37:46,589 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:46,702 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:46,704 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:46,705 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:46,706 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:37:46,706 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:37:46,707 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:46,708 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:37:46,708 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:37:47,281 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,283 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,283 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:37:47,286 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,288 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,290 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,293 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,297 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,298 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:37:47,298 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:37:47,301 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,302 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:37:47,302 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:37:47,304 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,305 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:37:47,306 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:47,307 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:37:47,308 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:37:47,308 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:37:47,309 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:37:47,318 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:37:51,143 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:51,318 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:51,334 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:51,336 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:51,336 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:37:51,336 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:37:51,343 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:51,343 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:37:51,343 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:37:52,175 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,177 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,178 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:37:52,182 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,184 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,185 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,189 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,190 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,191 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:37:52,191 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:37:52,193 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,193 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:37:52,194 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:37:52,196 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,197 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:37:52,200 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:37:52,201 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:37:52,202 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:37:52,204 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:37:52,205 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:37:58,825 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:38:05,547 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.69s
+2025-03-14 01:38:28,597 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:38:29,752 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_2
+2025-03-14 01:38:35,474 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.86s
+2025-03-14 01:38:36,754 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:38:43,376 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.60s
+2025-03-14 01:38:45,130 - simulator - INFO - SP_13_23: Fallo simulado - Pico de corriente en phase_b
+2025-03-14 01:38:56,380 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:39:03,240 - simulator - INFO - SP_13_23 completó transición a Normal en 6.80s
+2025-03-14 01:39:20,979 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:39:23,123 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:39:24,484 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:39:27,909 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.87s
+2025-03-14 01:39:36,867 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:36,984 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:36,988 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:36,991 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:36,991 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:39:36,991 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:39:36,995 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:36,995 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:39:36,995 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:39:37,486 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,490 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,490 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:39:37,495 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,498 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,502 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,509 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,512 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,513 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:39:37,513 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:39:37,519 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,520 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:39:37,520 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:39:37,524 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,525 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:39:37,529 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:37,530 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:39:37,530 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:39:37,532 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:39:37,534 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:39:37,545 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:39:41,954 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,238 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,240 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,242 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,243 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:39:42,243 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:39:42,245 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,246 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:39:42,246 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:39:42,912 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,915 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,916 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:39:42,919 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,921 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,923 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,926 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,928 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,928 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:39:42,929 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:39:42,931 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,932 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:39:42,932 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:39:42,934 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,936 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:39:42,939 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:39:42,940 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:39:42,941 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:39:42,942 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:39:42,942 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:39:52,484 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:39:59,062 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.56s
+2025-03-14 01:40:01,095 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:40:07,694 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.58s
+2025-03-14 01:40:27,120 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:40:33,738 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.59s
+2025-03-14 01:40:34,876 - simulator - INFO - VIM_11_21: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:40:34,876 - simulator - ERROR - Error en simulación de VIM_11_21: float division by zero
+2025-03-14 01:40:43,732 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:40:50,558 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.75s
+2025-03-14 01:40:53,946 - simulator - INFO - SP_13_23: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:40:53,947 - simulator - ERROR - Error en simulación de SP_13_23: float division by zero
+2025-03-14 01:41:01,844 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:41:08,711 - simulator - INFO - SP_13_23 completó transición a Normal en 6.78s
+2025-03-14 01:41:14,298 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:41:19,067 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:41:21,381 - simulator - INFO - SP_13_23 completó transición a Reversa en 7.01s
+2025-03-14 01:41:25,630 - simulator - INFO - VIM_11_21 completó transición a Normal en 6.55s
+2025-03-14 01:41:54,748 - simulator - INFO - SP_13_23: Fallo simulado - Caída de tensión en ctrl_2
+2025-03-14 01:42:02,918 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:42:03,787 - simulator - INFO - SP_13_23 iniciando transición de Reversa a Normal
+2025-03-14 01:42:10,531 - simulator - INFO - VIM_11_21 completó transición a Reversa en 7.60s
+2025-03-14 01:42:11,438 - simulator - INFO - SP_13_23 completó transición a Normal en 7.63s
+2025-03-14 01:42:47,048 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_3
+2025-03-14 01:42:51,863 - simulator - INFO - VIM_11_21: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:43:13,459 - simulator - INFO - VIM_11_21 iniciando transición de Reversa a Normal
+2025-03-14 01:43:16,710 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:43:21,121 - simulator - INFO - VIM_11_21 completó transición a Normal en 7.59s
+2025-03-14 01:43:24,646 - simulator - INFO - SP_13_23 completó transición a Reversa en 7.84s
+2025-03-14 01:43:25,622 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_1
+2025-03-14 01:43:54,064 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,209 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,211 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,212 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,212 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:43:54,213 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:43:54,215 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,215 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:43:54,216 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:43:54,735 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,737 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,738 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:43:54,740 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,742 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,744 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,748 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,751 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,751 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:43:54,752 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:43:54,753 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,754 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:43:54,754 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:43:54,756 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,757 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:43:54,759 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:54,760 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:43:54,760 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:43:54,761 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:43:54,761 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:43:54,771 - dash.dash - INFO - Dash is running on http://0.0.0.0:8050/
+
+2025-03-14 01:43:58,975 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,119 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,121 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,123 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,124 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:43:59,124 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:43:59,125 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,125 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:43:59,126 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:43:59,820 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,822 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,823 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:43:59,825 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,827 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,829 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,833 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,836 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,837 - simulator - INFO - Simulador para VIM_11_21 inicializado
+2025-03-14 01:43:59,838 - simulator - INFO - Simulador para VIM_11_21 cargado
+2025-03-14 01:43:59,839 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,839 - simulator - INFO - Simulador para SP_13_23 inicializado
+2025-03-14 01:43:59,840 - simulator - INFO - Simulador para SP_13_23 cargado
+2025-03-14 01:43:59,842 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,842 - alerts - INFO - Procesador de alertas iniciado
+2025-03-14 01:43:59,844 - database - INFO - Base de datos inicializada correctamente
+2025-03-14 01:43:59,845 - anomaly_detector - INFO - Cargados 0 modelos y 0 scalers
+2025-03-14 01:43:59,846 - simulator - INFO - Simulador para VIM_11_21 iniciado
+2025-03-14 01:43:59,848 - simulator - INFO - Simulador para SP_13_23 iniciado
+2025-03-14 01:43:59,848 - simulator - INFO - Iniciados 2 simuladores
+2025-03-14 01:44:28,086 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:44:30,071 - simulator - INFO - VIM_11_21 iniciando transición de Normal a Reversa
+2025-03-14 01:44:34,796 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.46s
+2025-03-14 01:44:36,783 - simulator - INFO - VIM_11_21 completó transición a Reversa en 6.63s
+2025-03-14 01:44:37,926 - simulator - INFO - SP_13_23: Fallo simulado - Caída de tensión en ctrl_1
+2025-03-14 01:44:43,545 - simulator - INFO - SP_13_23: Fallo simulado - Caída de tensión en ctrl_4
+2025-03-14 01:45:02,106 - simulator - INFO - SP_13_23: Fallo simulado - Pico de corriente en phase_c
+2025-03-14 01:45:23,192 - simulator - INFO - VIM_11_21: Fallo simulado - Caída de tensión en ctrl_2
+2025-03-14 01:45:25,274 - simulator - INFO - SP_13_23 iniciando transición de Normal a Reversa
+2025-03-14 01:45:32,096 - simulator - INFO - SP_13_23 completó transición a Reversa en 6.74s
+2025-03-14 01:45:41,515 - simulator - INFO - SP_13_23: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:45:41,515 - simulator - ERROR - Error en simulación de SP_13_23: float division by zero
+2025-03-14 01:45:46,195 - simulator - INFO - VIM_11_21: Fallo simulado - Desequilibrio entre fases
+2025-03-14 01:45:46,195 - simulator - ERROR - Error en simulación de VIM_11_21: float division by zero

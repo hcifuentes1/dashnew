@@ -9,6 +9,7 @@ import dash
 from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 from flask import session
+from datetime import datetime, timedelta
 
 # Importar módulos del proyecto
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -320,7 +321,7 @@ def register_auth_callbacks(app):
             Output("login-alert", "is_open"),
             Output("login-alert", "children"),
             Output("session-store", "data"),
-            Output("url-redirect", "pathname", allow_duplicate=True),
+            Output("url-redirect", "pathname"),
         ],
         [Input("login-button", "n_clicks")],
         [
@@ -333,14 +334,12 @@ def register_auth_callbacks(app):
     def login_callback(n_clicks, username, password, current_session):
         """Callback para el inicio de sesión."""
         print(f"Login callback triggered - Clicks: {n_clicks}")
-        print(f"Username: {username}, Password: {'*' * len(password) if password else 'None'}")
-        print(f"Sesión actual: {current_session}")
         
         # Valores por defecto
         is_open = False
         alert_message = ""
         session_data = None
-        redirect_url = None
+        redirect_url = dash.no_update
         
         # Verificar si se hizo clic en el botón
         if n_clicks and n_clicks > 0:
@@ -357,16 +356,18 @@ def register_auth_callbacks(app):
             print(f"Resultado de autenticación: {result}")
             
             if result:
-                # Autenticación exitosa - asegurar almacenamiento completo de la sesión
+                # Autenticación exitosa
+                current_time = datetime.now()
                 session_data = {
                     'token': result['token'],
                     'user': result['user'],
-                    'expiry': result['expiry']
+                    'expiry': result['expiry'],
+                    'timestamp': current_time.isoformat()
                 }
-                print(f"Datos de sesión almacenados: {session_data}")
+                print(f"Datos de sesión generados: {session_data}")
                 
-                # Redirección explicita
-                return False, "", session_data, "/dashboard"
+                # Redirigir explícitamente al dashboard
+                return is_open, alert_message, session_data, "/dashboard"
             else:
                 # Autenticación fallida
                 print("Login fallido")
