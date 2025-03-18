@@ -240,6 +240,10 @@ def create_auth_layout():
     """
     return html.Div(
         [
+            # Componentes esenciales para la navegación y sesión
+            dcc.Store(id='session-store', storage_type='local'),
+            dcc.Location(id='url-redirect', refresh=True),
+            
             # Banner superior
             dbc.Navbar(
                 dbc.Container(
@@ -300,12 +304,6 @@ def create_auth_layout():
                     ),
                 ]
             ),
-            
-            # Almacenamiento para el token de sesión
-            dcc.Store(id="session-store"),
-            
-            # Redireccionamiento
-            dcc.Location(id="url-redirect", refresh=True),
         ]
     )
 
@@ -321,7 +319,7 @@ def register_auth_callbacks(app):
             Output("login-alert", "is_open"),
             Output("login-alert", "children"),
             Output("session-store", "data"),
-            # Eliminamos la salida de url-redirect ya que se maneja en app.py
+            Output("url-redirect", "pathname", allow_duplicate=True)
         ],
         [Input("login-button", "n_clicks")],
         [
@@ -333,26 +331,22 @@ def register_auth_callbacks(app):
     )
     def login_callback(n_clicks, username, password, current_session):
         """Callback para el inicio de sesión."""
-        print(f"Login callback triggered - Clicks: {n_clicks}")
-        
         # Valores por defecto
         is_open = False
         alert_message = ""
-        session_data = None
+        session_data = current_session
+        redirect_path = dash.no_update
         
         # Verificar si se hizo clic en el botón
         if n_clicks and n_clicks > 0:
             # Validar campos
             if not username or not password:
-                print("Campos incompletos")
                 is_open = True
                 alert_message = "Por favor, complete todos los campos."
-                return is_open, alert_message, current_session
+                return is_open, alert_message, session_data, redirect_path
             
             # Intentar autenticar
             result = auth_manager.login(username, password)
-            
-            print(f"Resultado de autenticación: {result}")
             
             if result:
                 # Autenticación exitosa
@@ -363,18 +357,16 @@ def register_auth_callbacks(app):
                     'expiry': result['expiry'],
                     'timestamp': current_time.isoformat()
                 }
-                print(f"Datos de sesión generados: {session_data}")
                 
-                # Devolver datos de sesión
-                return is_open, alert_message, session_data
+                # Redireccionar al dashboard
+                return is_open, alert_message, session_data, "/dashboard"
             else:
                 # Autenticación fallida
-                print("Login fallido")
                 is_open = True
                 alert_message = "Credenciales incorrectas. Inténtelo nuevamente."
-                return is_open, alert_message, current_session
+                return is_open, alert_message, session_data, redirect_path
         
-        return is_open, alert_message, current_session
+        return is_open, alert_message, session_data, redirect_path
     
     # El resto del código se mantiene igual
     @app.callback(

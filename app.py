@@ -75,7 +75,11 @@ app.layout = html.Div(
 def create_main_layout(active_page='monitoring'):
     return html.Div(
         [
-            # Barra de navegación (código existente se mantiene igual)
+            # Componentes esenciales para la navegación y sesión
+            dcc.Store(id='session-store', storage_type='local'),
+            dcc.Location(id='url-redirect', refresh=True),
+            
+            # Barra de navegación
             dbc.Navbar(
                 dbc.Container(
                     [
@@ -144,7 +148,7 @@ def create_main_layout(active_page='monitoring'):
                                     dbc.NavLink(
                                         [
                                             html.I(className="fas fa-user me-2"),
-                                            html.Span("Usuario", id="user-display-name"),
+                                            html.Span(id="user-display-name"),
                                         ],
                                         href="#",
                                         id="user-dropdown",
@@ -191,7 +195,7 @@ def create_main_layout(active_page='monitoring'):
                 className="py-3",
             ),
             
-            # Footer (código existente se mantiene igual)
+            # Footer
             html.Footer(
                 dbc.Container(
                     [
@@ -218,80 +222,58 @@ def create_main_layout(active_page='monitoring'):
             ),
         ]
     )
-
 @app.callback(
     [
         Output('page-content', 'children', allow_duplicate=True),
         Output('url-redirect', 'pathname', allow_duplicate=True)
     ],
+    [Input('url', 'pathname')],
     [
-        Input('url', 'pathname'),
-        Input('session-store', 'data')
-    ],
-    [
+        State('session-store', 'data'),
         State('url', 'search')
     ],
     prevent_initial_call=True
 )
-def handle_navigation_and_login(pathname, session_data, search_params):
-    """
-    Callback unificado para manejo de navegación y redirección
-    """
-    ctx = dash.callback_context
-    trigger = ctx.triggered[0]['prop_id'].split('.')[0]
+
+def handle_navigation(pathname, session_data, search_params):
+    """Callback para manejar la navegación"""
+    print(f"Navegación a: {pathname}")
+    print(f"Datos de sesión: {session_data}")
     
-    print(f"Triggered by: {trigger}")
-    print(f"Pathname: {pathname}")
-    print(f"Session Data: {session_data}")
-    
-    # Valores por defecto
-    page_content = create_auth_layout()
-    redirect_path = dash.no_update
-    
-    # Manejo de navegación y sesión
-    if AUTH_CONFIG['require_login']:
-        # Verificación de sesión
-        if (not session_data or 
-            not isinstance(session_data, dict) or 
-            'user' not in session_data or 
-            'token' not in session_data):
-            return page_content, redirect_path
-        
-        # Verificar expiración
+    # Verificar autenticación
+    is_authenticated = False
+    if session_data and isinstance(session_data, dict) and 'token' in session_data:
         try:
             expiry = datetime.fromisoformat(session_data.get('expiry', ''))
-            if datetime.now() > expiry:
-                return page_content, redirect_path
+            if datetime.now() <= expiry:
+                is_authenticated = True
         except Exception as e:
-            print(f"Error de sesión: {e}")
-            return page_content, redirect_path
-        
-        # Lógica de redirección con parámetros
-        if pathname in ['/', '/login']:
-            # Verificar parámetros de URL
-            if search_params and 'tab' in search_params:
-                params = urllib.parse.parse_qs(search_params.lstrip('?'))
-                tab = params.get('tab', ['dashboard'])[0]
-                
-                tab_routes = {
-                    'dashboard': '/dashboard',
-                    'maintenance': '/maintenance',
-                    'reports': '/reports'
-                }
-                
-                redirect_path = tab_routes.get(tab, '/dashboard')
+            print(f"Error al verificar expiración: {e}")
     
-    # Determinar contenido de la página
-    if pathname in ['/', '/dashboard']:
-        page_content = create_main_layout('monitoring')
+    # Si requiere login y no está autenticado
+    if AUTH_CONFIG['require_login'] and not is_authenticated:
+        if pathname not in ['/', '/login']:
+            return create_auth_layout(), '/login'
+        else:
+            return create_auth_layout(), dash.no_update
+    
+    # Si está autenticado y en la página de login
+    if is_authenticated and pathname in ['/', '/login']:
+        return create_main_layout('monitoring'), '/dashboard'
+    
+    # Determinar la página a mostrar
+    if pathname == '/dashboard':
+        return create_main_layout('monitoring'), dash.no_update
     elif pathname == '/maintenance':
-        page_content = create_main_layout('maintenance')
+        return create_main_layout('maintenance'), dash.no_update
     elif pathname == '/reports':
-        page_content = create_main_layout('reports')
+        return create_main_layout('reports'), dash.no_update
+    elif pathname == '/logout':
+        # Limpiar la sesión y redirigir a login
+        return create_auth_layout(), '/login'
     else:
-        page_content = create_main_layout('monitoring')
-    
-    return page_content, redirect_path
+        # Por defecto, mostrar monitoreo
+        return create_main_layout('monitoring'), dash.no_update
 
 # Callback para mantener la sesión activa
 @app.callback(
@@ -329,10 +311,11 @@ def maintain_session(pathname, session_data):
 )
 def update_user_name(session_data):
     """Actualiza el nombre de usuario basado en los datos de sesión."""
-    if session_data and 'user' in session_data and 'username' in session_data['user']:
-        return session_data['user']['username']
-    else:
-        return "Usuario"
+    if session_data and isinstance(session_data, dict) and 'user' in session_data:
+        if 'username' in session_data['user']:
+            return session_data['user']['username']
+    
+    return "Usuario"
 
 # Callback para cargar el contenido específico de cada página
 @app.callback(

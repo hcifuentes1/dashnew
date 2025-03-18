@@ -44,6 +44,10 @@ class AnomalyDetector:
         self.scalers = {}
         self.last_trained = {}
         
+        # Añadir configuración necesaria
+        from config.config import MONITORING_PARAMS
+        self.config = MONITORING_PARAMS
+        
         # Crear directorio para modelos si no existe
         os.makedirs(MODEL_DIR, exist_ok=True)
         
