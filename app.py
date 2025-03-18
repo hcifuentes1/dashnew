@@ -27,6 +27,7 @@ from ui.auth_panel import create_auth_layout, register_auth_callbacks
 from ui.monitoring_panel import create_monitoring_layout, register_monitoring_callbacks
 from ui.maintenance_panel import create_maintenance_layout, register_maintenance_callbacks
 from ui.reporting_panel import create_reporting_layout, register_reporting_callbacks
+from ui.geographic_panel import create_geographic_layout, register_geographic_callbacks
 
 # Inicializar componentes
 db_manager = DatabaseManager()
@@ -75,8 +76,10 @@ app.layout = html.Div(
 def create_main_layout(active_page='monitoring'):
     return html.Div(
         [
-            # Componentes esenciales para la navegación y sesión
+            # Almacenamiento para variables de sesión
             dcc.Store(id='session-store', storage_type='local'),
+            
+            # Componente de redirección
             dcc.Location(id='url-redirect', refresh=True),
             
             # Barra de navegación
@@ -107,6 +110,13 @@ def create_main_layout(active_page='monitoring'):
                                             "Monitoreo",
                                             href="/dashboard",
                                             active=active_page == 'monitoring',
+                                        )
+                                    ),
+                                    dbc.NavItem(
+                                        dbc.NavLink(
+                                            "Geo-Visualización",
+                                            href="/geographic",
+                                            active=active_page == 'geographic',
                                         )
                                     ),
                                     dbc.NavItem(
@@ -264,6 +274,8 @@ def handle_navigation(pathname, session_data, search_params):
     # Determinar la página a mostrar
     if pathname == '/dashboard':
         return create_main_layout('monitoring'), dash.no_update
+    elif pathname == '/geographic':
+        return create_main_layout('geographic'), dash.no_update
     elif pathname == '/maintenance':
         return create_main_layout('maintenance'), dash.no_update
     elif pathname == '/reports':
@@ -318,17 +330,21 @@ def update_user_name(session_data):
     return "Usuario"
 
 # Callback para cargar el contenido específico de cada página
+
 @app.callback(
     Output('page-specific-content', 'children', allow_duplicate=True),
     [Input('url', 'pathname')],
     prevent_initial_call=True
 )
+
 def load_page_content(pathname):
     """Carga el contenido específico de la página."""
     if pathname == '/maintenance':
         return create_maintenance_layout()
     elif pathname == '/reports':
         return create_reporting_layout()
+    elif pathname == '/geographic':
+        return create_geographic_layout()
     else:
         # Página por defecto (monitoreo)
         return create_monitoring_layout()
@@ -346,6 +362,9 @@ def register_callbacks():
     
     # Registrar callbacks de reportes
     register_reporting_callbacks(app)
+    
+    # Registrar callbacks del panel geográfico
+    register_geographic_callbacks(app)
 
 # Registrar callbacks
 register_callbacks()
