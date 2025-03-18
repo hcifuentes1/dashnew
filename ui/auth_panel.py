@@ -103,7 +103,7 @@ def create_login_form():
                             className="text-center text-muted small",
                         ),
                         html.P(
-                            "Metro de Santiago - Departamento de Confiabilidad",
+                            "Metro de Santiago - Área Confiabilidad",
                             className="text-center text-muted small",
                         ),
                     ]
@@ -321,7 +321,7 @@ def register_auth_callbacks(app):
             Output("login-alert", "is_open"),
             Output("login-alert", "children"),
             Output("session-store", "data"),
-            Output("url-redirect", "pathname"),
+            # Eliminamos la salida de url-redirect ya que se maneja en app.py
         ],
         [Input("login-button", "n_clicks")],
         [
@@ -339,7 +339,6 @@ def register_auth_callbacks(app):
         is_open = False
         alert_message = ""
         session_data = None
-        redirect_url = dash.no_update
         
         # Verificar si se hizo clic en el botón
         if n_clicks and n_clicks > 0:
@@ -348,7 +347,7 @@ def register_auth_callbacks(app):
                 print("Campos incompletos")
                 is_open = True
                 alert_message = "Por favor, complete todos los campos."
-                return is_open, alert_message, current_session, redirect_url
+                return is_open, alert_message, current_session
             
             # Intentar autenticar
             result = auth_manager.login(username, password)
@@ -366,17 +365,18 @@ def register_auth_callbacks(app):
                 }
                 print(f"Datos de sesión generados: {session_data}")
                 
-                # Redirigir explícitamente al dashboard
-                return is_open, alert_message, session_data, "/dashboard"
+                # Devolver datos de sesión
+                return is_open, alert_message, session_data
             else:
                 # Autenticación fallida
                 print("Login fallido")
                 is_open = True
                 alert_message = "Credenciales incorrectas. Inténtelo nuevamente."
-                return is_open, alert_message, current_session, redirect_url
+                return is_open, alert_message, current_session
         
-        return is_open, alert_message, current_session, redirect_url
+        return is_open, alert_message, current_session
     
+    # El resto del código se mantiene igual
     @app.callback(
         [
             Output("aws-config-alert", "is_open"),
@@ -393,6 +393,8 @@ def register_auth_callbacks(app):
     )
     def aws_config_callback(n_clicks, access_key, secret_key, region):
         """Callback para la configuración de AWS."""
+        # (código existente se mantiene sin cambios)
+        ...
         # Valores por defecto
         is_open = False
         alert_message = ""

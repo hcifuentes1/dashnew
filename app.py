@@ -10,9 +10,8 @@ from dash import html, dcc, callback, Input, Output, State
 import dash_bootstrap_components as dbc
 from flask import session, g
 from datetime import datetime, timedelta
+import urllib.parse
 import dash
-from dash import Input, Output, State
-from flask import session
 
 # Agregar directorio principal al path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -28,9 +27,6 @@ from ui.auth_panel import create_auth_layout, register_auth_callbacks
 from ui.monitoring_panel import create_monitoring_layout, register_monitoring_callbacks
 from ui.maintenance_panel import create_maintenance_layout, register_maintenance_callbacks
 from ui.reporting_panel import create_reporting_layout, register_reporting_callbacks
-from datetime import datetime
-from dash import callback_context
-from datetime import datetime, timedelta
 
 # Inicializar componentes
 db_manager = DatabaseManager()
@@ -58,8 +54,6 @@ server = app.server
 server.secret_key = os.environ.get('SECRET_KEY', 'default-secret-key-for-development')
 
 # Layout principal
-# Layout principal
-# Layout principal
 app.layout = html.Div(
     [
         # Almacenamiento para variables de sesión
@@ -81,7 +75,7 @@ app.layout = html.Div(
 def create_main_layout(active_page='monitoring'):
     return html.Div(
         [
-            # Barra de navegación
+            # Barra de navegación (código existente se mantiene igual)
             dbc.Navbar(
                 dbc.Container(
                     [
@@ -197,7 +191,7 @@ def create_main_layout(active_page='monitoring'):
                 className="py-3",
             ),
             
-            # Footer
+            # Footer (código existente se mantiene igual)
             html.Footer(
                 dbc.Container(
                     [
@@ -207,7 +201,7 @@ def create_main_layout(active_page='monitoring'):
                                 dbc.Col(
                                     html.P(
                                         [
-                                            "© 2023 Metro de Santiago - Departamento de Confiabilidad | ",
+                                            "© 2025 Metro de Santiago - Área Confiabilidad | ",
                                             html.A("Ayuda", href="#"),
                                             " | ",
                                             html.A("Acerca de", href="#"),
@@ -224,57 +218,82 @@ def create_main_layout(active_page='monitoring'):
             ),
         ]
     )
-# Callback para actualizar el contenido según la URL
 
-# Callback para mantener la sesión
 @app.callback(
-    Output('page-content', 'children', allow_duplicate=True),
-    [Input('url', 'pathname')],
-    [State('session-store', 'data')],
+    [
+        Output('page-content', 'children', allow_duplicate=True),
+        Output('url-redirect', 'pathname', allow_duplicate=True)
+    ],
+    [
+        Input('url', 'pathname'),
+        Input('session-store', 'data')
+    ],
+    [
+        State('url', 'search')
+    ],
     prevent_initial_call=True
 )
-def display_page(pathname, session_data):
-    """Muestra el contenido correspondiente a la URL."""
-    print(f"URL navegada: {pathname}")
-    print(f"Datos de sesión: {session_data}")
-    print(f"Tipo de datos de sesión: {type(session_data)}")
+def handle_navigation_and_login(pathname, session_data, search_params):
+    """
+    Callback unificado para manejo de navegación y redirección
+    """
+    ctx = dash.callback_context
+    trigger = ctx.triggered[0]['prop_id'].split('.')[0]
     
-    # Verificar si requiere autenticación
+    print(f"Triggered by: {trigger}")
+    print(f"Pathname: {pathname}")
+    print(f"Session Data: {session_data}")
+    
+    # Valores por defecto
+    page_content = create_auth_layout()
+    redirect_path = dash.no_update
+    
+    # Manejo de navegación y sesión
     if AUTH_CONFIG['require_login']:
-        # Verificación más estricta de la sesión
+        # Verificación de sesión
         if (not session_data or 
             not isinstance(session_data, dict) or 
             'user' not in session_data or 
             'token' not in session_data):
-            print("No hay sesión válida, mostrando login")
-            return create_auth_layout()
+            return page_content, redirect_path
         
-        # Verificar expiración de la sesión
+        # Verificar expiración
         try:
             expiry = datetime.fromisoformat(session_data.get('expiry', ''))
-            current_time = datetime.now()
-            
-            if current_time > expiry:
-                print("Sesión expirada, mostrando login")
-                return create_auth_layout()
+            if datetime.now() > expiry:
+                return page_content, redirect_path
         except Exception as e:
-            print(f"Error al verificar expiración: {e}")
-            return create_auth_layout()
+            print(f"Error de sesión: {e}")
+            return page_content, redirect_path
+        
+        # Lógica de redirección con parámetros
+        if pathname in ['/', '/login']:
+            # Verificar parámetros de URL
+            if search_params and 'tab' in search_params:
+                params = urllib.parse.parse_qs(search_params.lstrip('?'))
+                tab = params.get('tab', ['dashboard'])[0]
+                
+                tab_routes = {
+                    'dashboard': '/dashboard',
+                    'maintenance': '/maintenance',
+                    'reports': '/reports'
+                }
+                
+                redirect_path = tab_routes.get(tab, '/dashboard')
     
-    # Si llegamos aquí, hay una sesión válida
-    print(f"Sesión válida, mostrando {pathname}")
-    
-    # Routing de páginas
+    # Determinar contenido de la página
     if pathname in ['/', '/dashboard']:
-        return create_main_layout('monitoring')
+        page_content = create_main_layout('monitoring')
     elif pathname == '/maintenance':
-        return create_main_layout('maintenance')
+        page_content = create_main_layout('maintenance')
     elif pathname == '/reports':
-        return create_main_layout('reports')
+        page_content = create_main_layout('reports')
     else:
-        return create_main_layout('monitoring')
+        page_content = create_main_layout('monitoring')
+    
+    return page_content, redirect_path
 
-# Callback para mantener la sesión
+# Callback para mantener la sesión activa
 @app.callback(
     Output('session-store', 'data', allow_duplicate=True),
     [Input('url', 'pathname')],
@@ -302,37 +321,6 @@ def maintain_session(pathname, session_data):
     print("No se puede mantener la sesión")
     return dash.no_update
 
-
-def handle_login_redirect(session_data, current_pathname):
-    """Maneja la redirección después del login."""
-    print(f"Redireccionando - Datos de sesión: {session_data}")
-    print(f"Ruta actual: {current_pathname}")
-    
-    if (session_data and 
-        isinstance(session_data, dict) and 
-        'user' in session_data and 
-        'token' in session_data):
-        try:
-            expiry = datetime.fromisoformat(session_data.get('expiry', ''))
-            
-            if datetime.now() <= expiry:
-                # Si estamos en login o ruta raíz, redirigir a dashboard
-                if current_pathname in ['/', '/login']:
-                    print("Redirigiendo a dashboard")
-                    return "/dashboard"
-        except Exception as e:
-            print(f"Error en redirección: {e}")
-    
-    return dash.no_update
-
-# Callback para redirigir después del login
-@app.callback(
-    Output('url-redirect', 'pathname', allow_duplicate=True),
-    [Input('session-store', 'data')],
-    [State('url', 'pathname')],
-    prevent_initial_call=True
-)
-
 # Callback para actualizar el nombre de usuario
 @app.callback(
     Output('user-display-name', 'children'),
@@ -345,43 +333,7 @@ def update_user_name(session_data):
         return session_data['user']['username']
     else:
         return "Usuario"
-    
-# Callback para redirigir basado en la sesión
-@app.callback(
-    Output('url-redirect', 'pathname', allow_duplicate=True),
-    [Input('session-store', 'data')],
-    [State('url', 'pathname')],
-    prevent_initial_call=True
-)
-def handle_redirect(session_data, current_pathname):
-    """Gestiona las redirecciones basadas en la sesión."""
-    print(f"Redirect Callback - Session Data: {session_data}")
-    print(f"Current Pathname: {current_pathname}")
-    
-    # Verificar si hay una sesión válida
-    if (session_data and 
-        isinstance(session_data, dict) and 
-        'user' in session_data and 
-        'token' in session_data):
-        
-        # Verificar expiración
-        try:
-            expiry = datetime.fromisoformat(session_data.get('expiry', ''))
-            
-            # Si la sesión no ha expirado y estamos en login o ruta raíz, redirigir a dashboard
-            if datetime.now() <= expiry:
-                if current_pathname in ['/', '/login']:
-                    print("Redirigiendo a dashboard")
-                    return "/dashboard"
-            else:
-                print("Sesión expirada")
-        except Exception as e:
-            print(f"Error al verificar expiración: {e}")
-    
-    # Por defecto, no redirigir
-    return dash.no_update
 
-# Callback para cargar el contenido específico de cada página
 # Callback para cargar el contenido específico de cada página
 @app.callback(
     Output('page-specific-content', 'children', allow_duplicate=True),
@@ -397,9 +349,6 @@ def load_page_content(pathname):
     else:
         # Página por defecto (monitoreo)
         return create_monitoring_layout()
-
-
-
 
 def register_callbacks():
     """Registra todos los callbacks necesarios para la aplicación."""
